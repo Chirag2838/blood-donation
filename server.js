@@ -8,7 +8,7 @@ var request = require('request');
 var app = express();
 var router = express.Router();
 
-var config = require('./config');
+var config = require('./config.js');
 app.set('superSecret',config.secretKey);
 
 mongoose.connect('mongodb://chirag123:chirag2838#@ds123556.mlab.com:23556/bloodgroup');
