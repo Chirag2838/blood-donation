@@ -13,7 +13,7 @@ app.set('superSecret',config.secretKey);
 
 mongoose.connect('mongodb://chirag123:chirag2838#@ds123556.mlab.com:23556/bloodgroup');
 
-var port = 8080;
+var port = Number(process.env.PORT || 8080);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
